@@ -32,7 +32,7 @@ The following summarises the accuracy and IOU for the trained networks on the va
 #### Qualitative Results for SegNet
 The following are the visualizations of the output for the SegNet (from left to right- input, ground truth, model output):
 
-![screenschot]([https://github.com/Lohit-pro/Driving-Affordance-using-SegNet/blobs/master/imgs/segnet.png])
+![screenschot]([[https://github.com/Lohit-pro/Driving-Affordance-using-SegNet/blobs/master/imgs/segnet.png]](https://github.com/Lohit-pro/Driving-Affordance-using-SegNet/blob/main/imgs/segnet.png))
 
 
 ## Acknowledgements
