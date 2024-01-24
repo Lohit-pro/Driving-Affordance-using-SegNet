@@ -1,6 +1,6 @@
 # Semantic Segmentation on Indian Driving Dataset
 
-## Team Members: Anish Madan, Apoorv Khattar
+## Team Members: Abhishek N M, Sahana S D, Kusuma M
 
 ## About the project
 We perform semantic segmentation using FCN8s and SegNet on the Indian Driving Dataset and compare the performance of the two models based on accuracy and IOU score.
