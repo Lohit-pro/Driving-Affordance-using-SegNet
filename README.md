@@ -32,7 +32,7 @@ The following summarises the accuracy and IOU for the trained networks on the va
 #### Qualitative Results for SegNet
 The following are the visualizations of the output for the SegNet (from left to right- input, ground truth, model output):
 
-![screenschot](https://github.com/anishmadan23/semantic-segmentation-indian-driving-dataset/blob/master/imgs/segnet.png)
+![screenschot](https://github.com/Lohit-pro/Driving-Affordance-using-SegNet/imgs/segnet.png)
 
 
 ## Acknowledgements
