@@ -3,10 +3,10 @@
 ## Team Members: Abhishek N M, Sahana S D, Kusuma M
 
 ## About the project
-We perform semantic segmentation using FCN8s and SegNet on the Indian Driving Dataset and compare the performance of the two models based on accuracy and IOU score.
+We perform semantic segmentation using SegNet on the Indian Driving Datase to obtain at the performance of the SegNet model on the accuracy and IOU score.
 
 ## Dataset
-The Indian Driving Dataset consists of 6906 and 979 high resolution images in the training and validation set. There are a total of 39 unique class labels. We work with a subset consisting of 1000 training and 100 test samples for our project.
+The Indian Driving Dataset consists of 6906 and 979 high resolution images in the training and validation set. There are a total of 39 unique class labels. We worked only for 1 class that is drivable area.
 
 ## Data Preprocessing
 For each image, we have a json file containing the number of different classes in the image and the polygon vertices for segmentation map of each class. We simplify this directory structure as follows:
@@ -20,22 +20,14 @@ For each image, we have a json file containing the number of different classes i
 We create segmentation maps as .png files and store them in the seg directory. Refer to [Preprocessing.ipynb](https://github.com/anishmadan23/semantic-segmentation-indian-driving-dataset/blob/master/Preprocessing.ipynb) to understand how the preprocessing is done.
 
 ## Models
-We refer to the implementaion by [zijundeng](https://github.com/zijundeng/pytorch-semantic-segmentation) for FCN8s and SegNet architectures. We use a pretrained VGG16 and pretrained VGG19 with batch normalization layers as a feature extractor for FCN8s and SegNet respectively.
-
-The weights for the trained models are available [here](https://drive.google.com/drive/folders/1O7DhhZuJGWqSjCkbcv-uWFDDb5o1IVce?usp=sharing).
+We refer to the implementaion by [zijundeng](https://github.com/zijundeng/pytorch-semantic-segmentation) for SegNet architecture. We use a pretrained VGG16 with batch normalization layers as a feature extractor for SegNet.
 
 ## Results
 #### Accuracy And IOU Scores
 The following summarises the accuracy and IOU for the trained networks on the validation set:
 | Model  | Accuracy | IOU |
 | ------------- | ------------- | ------------- |
-| FCN8s  | 74.46  | 60.23  |
 | SegNet | 79.19  | 63.44  |
-
-#### Qualitative Results for FCN8s
-The following are the visualizations of the output for the FCN8s (from left to right- input, ground truth, model output):
-
-![screenschot](https://github.com/anishmadan23/semantic-segmentation-indian-driving-dataset/blob/master/imgs/fcn.png)
 
 #### Qualitative Results for SegNet
 The following are the visualizations of the output for the SegNet (from left to right- input, ground truth, model output):
@@ -44,7 +36,4 @@ The following are the visualizations of the output for the SegNet (from left to 
 
 
 ## Acknowledgements
-We would like to thank Dr. Saket Anand for providing us with the Indian Driving Dataset for this project. We would also like to thank Zijun Deng for making their repository on semantic segmentation publicly available which we have referred to for FCN and SegNet architectures.
-
-###### This work was done as part of our project for CSE343: Machine Learning course at IIIT Delhi.
-###### The original code can be found in the [here](https://github.com/anishmadan23/semantic-segmentation-indian-driving-dataset/tree/master/old) but with the lockdown due to COVID-19, we had some time on our hands so we decided to clean up the code.
+We would also like to thank Zijun Deng for making their repository on semantic segmentation publicly available which we have referred to for FCN and SegNet architectures.
